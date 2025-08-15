@@ -1,4 +1,1 @@
 fastapi
-mangum
-supabase
-pydantic
