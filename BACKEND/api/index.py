@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from supabase import create_client, Client
-from mangum import Mangum
 
 
 SUPABASE_URL = "https://irbeulpuchvaxuvdsvyc.supabase.co"
@@ -125,5 +124,3 @@ def get_rfid():
         "message": "UID RFID terakhir",
         "uid": last_rfid_uid
     }
-
-handler = Mangum(app)
